@@ -1,0 +1,116 @@
+/* General styling for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f0f8ff, #d7e9ff); /* Soft gradient for uniqueness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.4s ease-in-out; /* Smooth background transition */
+}
+
+/* Card container styling */
+.container {
+    background-color: #fff; /* Clean white background */
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* More dramatic shadow */
+    width: 100%;
+    max-width: 460px; /* Slightly wider for balance */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Container hover effect */
+.container:hover {
+    transform: translateY(-10px); /* Lifted on hover for depth */
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Title styling */
+h1 {
+    font-size: 30px; /* Larger font size for uniqueness */
+    color: #00254d; /* Dark navy for the title */
+    margin-bottom: 30px;
+    font-weight: 700; /* Extra bold for emphasis */
+    letter-spacing: 2px; /* Extra spacing for a clean, modern look */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 25px;
+}
+
+/* Label styling */
+label {
+    font-size: 18px;
+    color: #444;
+    font-weight: bold; /* Bold for a modern, defined look */
+    text-transform: uppercase; /* All uppercase for labels */
+    letter-spacing: 1px;
+}
+
+/* Input styling */
+input[type="number"] {
+    width: 100%;
+    padding: 14px; /* Larger padding for comfort */
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #f0f8ff; /* Light background to match theme */
+    margin-top: 10px;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 10px rgba(0, 91, 187, 0.1); /* Soft shadow for inputs */
+}
+
+/* Input focus effect */
+input[type="number"]:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.4); /* Unique glow on focus */
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(135deg, #007bff, #00d4ff); /* Gradient button */
+    color: white;
+    padding: 15px;
+    font-size: 18px; /* Bold font for button */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03); /* Slight scaling for interactive feel */
+}
+
+/* Result styling */
+#result {
+    margin-top: 30px; /* More space for result */
+    font-size: 24px; /* Larger result text */
+    color: #b8233e;
+    font-weight: 700; /* Bolder result text */
+    background-color: #f0f8ff;
+    border-radius: 12px; /* Rounded box for result */
+    padding: 15px;
+    min-height: 50px; /* Ensures result box */
+    box-shadow: 0 4px 15px rgba(0, 170, 255, 0.15); /* Subtle shadow */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 450px) {
+    .container {
+        width: 90%;
+        padding: 35px;
+    }
+}
